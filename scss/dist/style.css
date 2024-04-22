@@ -1,0 +1,9 @@
+body {
+  background-color: red;
+}
+body div {
+  color: pink;
+}
+body div h2 {
+  color: green;
+}
