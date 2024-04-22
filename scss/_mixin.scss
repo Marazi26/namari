@@ -14,8 +14,10 @@
     min-height: 70vh;
 }
 @mixin section-sizing-mobile{
-    min-height: 100vh;
     width: 90%;
+}
+@mixin section-vh-sizing-mobile{
+    min-height: 60vh;
 }
 
 /***     FLEX BOXES     ********************************/
@@ -56,6 +58,17 @@
     font-weight: 400;
 }
 
+@mixin bolder-text{
+    color: $color-black;
+    font-family: 'Open Sans',sans-serif,Arial,Helvetica;
+    font-weight: 700;
+    font-size: 2.2rem;
+    text-transform: capitalize
+}
+@mixin bolder-text-mob{
+    @include bolder-text;
+    font-size: 1.8rem;
+}
 @mixin lighter-text{
     @include norm-text;
                 text-transform: lowercase;

@@ -1,0 +1,17 @@
+@mixin line {
+    border: .2rem solid $color-yellow;
+    width: 2.5rem;
+    margin: 2rem 0;
+}
+
+@mixin line-tab {
+    border: .15rem solid $color-yellow;
+    width: 2rem;
+    margin: 1.5rem 0;
+}
+
+@mixin line-mob {
+    border: .12rem solid $color-yellow;
+    width: 1rem;
+    margin: 1.5rem 0;
+}

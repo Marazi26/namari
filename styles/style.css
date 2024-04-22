@@ -9,7 +9,8 @@
   scroll-behavior: smooth;
 }
 
-ul, li {
+ul,
+li {
   list-style: none;
 }
 
@@ -161,7 +162,7 @@ body {
 }
 .nav-header-div header .header-overlay .header-line {
   border: 0.2rem solid #d2b356;
-  width: 3%;
+  width: 2.5rem;
   margin: 2rem 0;
 }
 .nav-header-div header .header-overlay .line-2 {
@@ -213,7 +214,7 @@ body {
   }
   .nav-header-div header .header-overlay .header-line {
     border: 0.15rem solid #d2b356;
-    width: 4%;
+    width: 2rem;
     margin: 1.5rem 0;
   }
   .nav-header-div header .header-overlay .line-2 {
@@ -261,12 +262,12 @@ body {
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .nav-header-div header .header-overlay {
     padding-top: 10%;
-    min-height: 100vh;
     width: 90%;
   }
   .nav-header-div header .header-overlay .header-line {
     border: 0.12rem solid #d2b356;
-    width: 5.5%;
+    width: 1rem;
+    margin: 1.5rem 0;
   }
   .nav-header-div header .header-overlay h1 {
     min-width: 70%;
@@ -315,8 +316,197 @@ body {
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .nav-header-div {
+    padding-bottom: 10%;
     background-size: cover;
     background-position: top center;
+  }
+}
+
+/*** ABOUT **************************************/
+.about {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .about-overlay {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: first baseline;
+}
+.about .about-overlay .left-about {
+  width: 33%;
+}
+.about .about-overlay .left-about h3 {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #cccccc;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  margin-bottom: 1rem;
+}
+.about .about-overlay .left-about h2 {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  font-weight: 700;
+  font-size: 2.2rem;
+  text-transform: capitalize;
+  width: 90%;
+}
+.about .about-overlay .left-about .header-line {
+  border: 0.2rem solid #d2b356;
+  width: 2.5rem;
+  margin: 2rem 0;
+}
+.about .about-overlay .left-about p {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #525252;
+  font-size: 1.1rem;
+  width: 90%;
+}
+.about .about-overlay .left-about p::first-letter {
+  text-transform: capitalize;
+}
+.about .about-overlay .right-about {
+  width: 64%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.about .about-overlay .right-about .about-card {
+  margin-bottom: 2rem;
+  width: 45%;
+}
+.about .about-overlay .right-about .about-card i {
+  color: #505458;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.about .about-overlay .right-about .about-card h2 {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  font-weight: 700;
+  font-size: 2.2rem;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.about .about-overlay .right-about .about-card p {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: lowercase;
+}
+.about .about-overlay .right-about .about-card p::first-letter {
+  text-transform: capitalize;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .about {
+    min-height: 70vh;
+    margin-top: 3rem;
+  }
+  .about .about-overlay {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about .about-overlay .left-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .about .about-overlay .left-about h2 {
+    text-align: center;
+  }
+  .about .about-overlay .left-about p {
+    text-align: center;
+  }
+  .about .about-overlay .right-about {
+    margin-top: 4rem;
+    width: 100%;
+  }
+  .about .about-overlay .right-about .about-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    width: 45%;
+  }
+  .about .about-overlay .right-about .about-card p {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .about {
+    min-height: 60vh;
+    margin-top: 3rem;
+  }
+  .about .about-overlay {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about .about-overlay .left-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .about .about-overlay .left-about h2 {
+    color: #111111;
+    font-family: "Open Sans", sans-serif, Arial, Helvetica;
+    font-weight: 700;
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .about .about-overlay .left-about p {
+    text-align: center;
+  }
+  .about .about-overlay .right-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    width: 100%;
+  }
+  .about .about-overlay .right-about .about-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+  .about .about-overlay .right-about .about-card p {
+    text-align: center;
   }
 }
 
