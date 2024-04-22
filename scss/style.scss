@@ -1,9 +1,238 @@
+@import "./mixin";
+@import "./cards";
+@import "./variables";
+
+/******** RESET *********************************************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
 body{
-    background-color: red;
-    div{
-        color: pink;
-        h2{
-            color: green;
+    border: 1.4rem solid $body-border;
+    @media screen and (min-width:320px) and (max-width:1024px) {
+        border: none;
+    }
+}
+/*** NAV **************************************/
+
+.nav-header-div{
+    background-image: url("../assets/navheader/banner-image-1.jpg");
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    padding-bottom: 3%;
+    @include section-vh-sizing-desktop;
+    nav{
+        @include flex-box-center;
+        padding-top: 3%;
+        .nav-overlay{
+            @include section-sizing-desktop;
+            @include flex-box;
+            
+            .logo-nav{
+                width: 10%;
+                img{
+                    width: 100%;
+                }
+            }
+            .menu-nav{
+                width: 45%;
+                ul{
+                    @include flex-box;
+                    justify-content: space-around;
+                    li{
+                        a{
+                            @include norm-text;
+                        }
+                    }
+                }
+            }
+
+            .social-medias-nav{
+                width: 14%;
+                ul{
+                    @include flex-box;
+                    justify-content: space-around;
+                    a{
+                        @include norm-text;
+                    }
+                }
+            }
+
+            .burger-menu{
+                display: none;
+            }
         }
+
+        @media screen and (min-width:768px) and (max-width:1024px) {
+            
+            .nav-overlay{
+                    @include section-sizing-tablet;
+                    justify-content: space-around;
+                    gap: 2rem;
+                    .logo-nav{
+                        width: 75%;
+                        img{
+                            width: 20%;
+                        }
+                    }
+                    .menu-nav{
+                        display: none;
+                    }
+                    .social-medias-nav{
+                        width: 20%;
+                    }
+                    .burger-menu{
+                        display: block;
+                        i{
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+        }
+
+        @media screen and (min-width:320px) and (max-width:768px) {
+            
+            .nav-overlay{
+                    @include section-sizing-tablet;
+                    justify-content: space-around;
+                    gap: 2rem;
+                    .logo-nav{
+                        width: 30%;
+                        img{
+                            width: 80%;
+                        }
+                    }
+                    .menu-nav{
+                        display: none;
+                    }
+                    .social-medias-nav{
+                        width: 30%;
+                        ul{
+                            a{
+                                font-size: .9rem;
+                            }
+                        }
+                    }
+                    .burger-menu{
+                        width: 10%;
+                        display: flex;
+                        justify-content: center;
+                        i{
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+        }
+    }
+
+    header{
+        @include flex-box-center;
+        @include section-vh-sizing-desktop;
+        .header-overlay{
+            @include section-sizing-desktop;
+           
+            .header-line{
+                border: .2rem solid $color-yellow;
+                width: 3%;
+                margin: 2rem 0;
+            }
+            .line-2{
+                margin-bottom: 5rem;
+            }
+            h1{
+                width: 41%;
+                font-family: 'Open Sans',sans-serif,Arial,Helvetica;
+                font-size: 4.5rem;
+                font-weight: 900;
+                line-height: 3.8rem;
+            }
+            p{
+                width: 35%;
+                margin: 2.5rem 0 1rem 0;
+                @include lighter-text;
+            }
+            a{
+                margin: 5rem 0;
+                @include long-button;
+            }
+        }
+
+        @media screen and (min-width:768px) and (max-width:1024px) {
+            .header-overlay{
+                padding-top: 10%;
+                @include section-sizing-tablet;
+                    .header-line{
+                        border: .15rem solid $color-yellow;
+                        width: 4%;
+                        margin: 1.5rem 0;
+                    }
+                    .line-2{
+                        margin-bottom: 5rem;
+                    }
+                    h1{
+                        width: 38%;
+                        font-size: 3.8rem;
+                        line-height: 3.4rem;
+                    }
+                    p{
+                        width: 35%;
+                        margin: 2.5rem 0 1rem 0;
+                        @include lighter-text;
+                    }
+                    a{
+                        margin: 5rem 0;
+                        @include long-button;
+                        padding: 1.5%;
+                    }
+           }
+        }
+
+        @media screen and (min-width:320px) and (max-width:768px) {
+            .header-overlay{
+                padding-top: 10%;
+                @include section-sizing-mobile;
+                    .header-line{
+                        border: .12rem solid $color-yellow;
+                        width: 5.5%;
+                    }
+                    h1{
+                        min-width: 70%;
+                        font-size: 3rem;
+                        line-height: 3rem;
+                    }
+                    p{
+                        width: 60%;
+                        margin: 2.5rem 0 1rem 0;
+                        @include lighter-text;
+                    }
+                    a{
+                        margin: 5rem 0;
+                        @include long-button;
+                        padding: 1.5%;
+                    }
+           }
+        }
+    }
+
+    @media screen and (min-width:768px) and (max-width:1024px) {
+        background-size: 180%;
+        background-position: top center;
+    }
+
+    @media screen and (min-width:320px) and (max-width:768px) {
+        background-size: cover;
+        background-position: top center;
     }
 }
