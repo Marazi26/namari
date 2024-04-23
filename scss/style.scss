@@ -1093,18 +1093,17 @@ body {
 
         .pricing-cards {
             @include flex-box;
-
             .pricing-card {
                 width: 31%;
-                padding: 1rem .5rem;
+                padding: 1rem 0;
                 background-color: $color-white;
+                border: .5rem solid transparent;
                 transition: .1s linear;
 
                 &:hover {
                     border: .5rem solid $color-yellow;
                     padding: 1rem 0;
                 }
-
 
                 .package-type {
                     @include flex-box-column-center;
@@ -1252,7 +1251,7 @@ footer{
             h2{
                 @include norm-text;
                 color: $body-border;
-                font-size: 1.5rem;
+                font-size: 1.2rem;
             }
         }
         .right-footer{
@@ -1263,7 +1262,7 @@ footer{
                 a {
                     @include norm-text;
                     color: $body-border;
-                font-size: 1.5rem;
+                    font-size: 1.2rem;
                 }
             }
         }

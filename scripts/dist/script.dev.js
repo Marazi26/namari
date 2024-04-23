@@ -2,6 +2,7 @@
 
 function fixedNav() {
   var nav = document.querySelector("nav");
+  var socials = document.querySelector(".nav-socials");
   var scrollValue = window.scrollY;
 
   if (scrollValue > 600) {
@@ -17,6 +18,7 @@ function fixedNav() {
     nav.style.alignItems = 'center';
     nav.style.zIndex = '0';
     nav.style.paddingBottom = '1rem';
+    socials.style.color = "#cccccc";
   } else {
     nav.style.border = "none";
     nav.style.position = "static";
@@ -24,3 +26,16 @@ function fixedNav() {
 }
 
 window.addEventListener("scroll", fixedNav);
+
+function menuLiColor() {
+  var menuItems = document.querySelectorAll(".nav-socials");
+  var scrollValue = window.scrollY;
+
+  if (scrollValue > 600) {
+    menuItems.forEach(function (item) {
+      item.style.color = '#cccccc';
+    });
+  }
+}
+
+window.addEventListener("scroll", menuLiColor);

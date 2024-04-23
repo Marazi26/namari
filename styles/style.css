@@ -1345,8 +1345,9 @@ body {
 }
 .pricing .pricing-overlay .pricing-cards .pricing-card {
   width: 31%;
-  padding: 1rem 0.5rem;
+  padding: 1rem 0;
   background-color: #ffffff;
+  border: 0.5rem solid transparent;
   transition: 0.1s linear;
 }
 .pricing .pricing-overlay .pricing-cards .pricing-card:hover {
@@ -1551,7 +1552,7 @@ footer .footer-overlay .left-footer h2 {
   font-size: 1rem;
   font-weight: 400;
   color: #cccccc;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 footer .footer-overlay .right-footer ul {
   display: flex;
@@ -1567,7 +1568,7 @@ footer .footer-overlay .right-footer ul a {
   font-size: 1rem;
   font-weight: 400;
   color: #cccccc;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 @media screen and (min-width: 320px) and (max-width: 1024px) {
   footer .footer-overlay {
