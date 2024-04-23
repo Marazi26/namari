@@ -994,6 +994,9 @@ body {
   }
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
+  .customers {
+    margin: 2rem 0;
+  }
   .customers .customers-overlay {
     width: 90%;
     display: flex;
@@ -1265,6 +1268,329 @@ body {
   }
   .testimonilas .testimonilas-overlay .testimonilas-imges {
     width: 100%;
+  }
+}
+
+/*** PRICING **************************************/
+.pricing {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding-bottom: 5rem;
+}
+.pricing .pricing-overlay {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pricing .pricing-overlay .pricing-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pricing .pricing-overlay .pricing-title h3 {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #cccccc;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  margin-bottom: 1rem;
+}
+.pricing .pricing-overlay .pricing-title h2 {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  font-weight: 700;
+  font-size: 2.2rem;
+  text-transform: capitalize;
+  text-transform: lowercase;
+  width: 100%;
+}
+.pricing .pricing-overlay .pricing-title h2::first-letter {
+  text-transform: capitalize;
+}
+.pricing .pricing-overlay .pricing-title .line-div {
+  border: 0.2rem solid #d2b356;
+  width: 2.5rem;
+  margin: 2rem 0;
+}
+.pricing .pricing-overlay .pricing-title p {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #525252;
+  font-size: 1.1rem;
+  width: 90%;
+}
+.pricing .pricing-overlay .pricing-title p::first-letter {
+  text-transform: capitalize;
+}
+.pricing .pricing-overlay .pricing-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.pricing .pricing-overlay .pricing-cards .pricing-card {
+  width: 31%;
+  padding: 1rem 0.5rem;
+  background-color: #ffffff;
+  transition: 0.1s linear;
+}
+.pricing .pricing-overlay .pricing-cards .pricing-card:hover {
+  border: 0.5rem solid #d2b356;
+  padding: 1rem 0;
+}
+.pricing .pricing-overlay .pricing-cards .pricing-card .package-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+}
+.pricing .pricing-overlay .pricing-cards .pricing-card .package-type h2 {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  font-weight: 700;
+}
+.pricing .pricing-overlay .pricing-cards .pricing-card .package-type p {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #cccccc;
+  text-transform: none;
+  font-style: italic;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.pricing .pricing-overlay .pricing-cards .pricing-card .package-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  background-color: #f5f5f5;
+}
+.pricing .pricing-overlay .pricing-cards .pricing-card .package-price h2 {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  font-weight: 700;
+  font-size: 2.2rem;
+  text-transform: capitalize;
+  font-size: 4rem;
+  position: relative;
+}
+.pricing .pricing-overlay .pricing-cards .pricing-card .package-price h2 span {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 0;
+  left: -1rem;
+}
+.pricing .pricing-overlay .pricing-cards .pricing-card .package-price p {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #525252;
+  color: #cccccc;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.pricing .pricing-overlay .pricing-cards .pricing-card .package-price p::first-letter {
+  text-transform: capitalize;
+}
+.pricing .pricing-overlay .pricing-cards .pricing-card .active-package {
+  background-color: #d2b356;
+}
+.pricing .pricing-overlay .pricing-cards .pricing-card .active-package p {
+  color: #ffffff;
+}
+.pricing .pricing-overlay .pricing-cards .pricing-card .package-info ul {
+  margin: 2rem 0;
+}
+.pricing .pricing-overlay .pricing-cards .pricing-card .package-info ul li {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #525252;
+  width: 100%;
+  padding: 0.5rem 0;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.1rem;
+  border-bottom: 1px solid #f5f5f5;
+}
+.pricing .pricing-overlay .pricing-cards .pricing-card .package-info ul li::first-letter {
+  text-transform: capitalize;
+}
+.pricing .pricing-overlay .pricing-cards .pricing-card .package-info ul li:last-child {
+  border: none;
+}
+.pricing .pricing-overlay .pricing-cards .pricing-card .buy-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+}
+.pricing .pricing-overlay .pricing-cards .pricing-card .buy-button a {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  font-weight: bold;
+  border: 0.2rem solid #111111;
+  padding: 1%;
+  transition: 0.3s linear;
+}
+.pricing .pricing-overlay .pricing-cards .pricing-card .buy-button a:hover {
+  border-color: #d2b356;
+  color: #d2b356;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .pricing {
+    min-height: 40vh;
+  }
+  .pricing .pricing-overlay {
+    margin: 3rem 0;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .pricing {
+    min-height: 50vh;
+  }
+  .pricing .pricing-overlay {
+    margin: 3rem 0;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .pricing .pricing-overlay .pricing-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .pricing .pricing-overlay .pricing-title h2 {
+    text-align: center;
+  }
+  .pricing .pricing-overlay .pricing-title .line-div {
+    border: 0.15rem solid #d2b356;
+    width: 2rem;
+    margin: 1.5rem 0;
+  }
+  .pricing .pricing-overlay .pricing-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .pricing .pricing-overlay .pricing-cards .pricing-card {
+    width: 100%;
+  }
+}
+
+/*** FOOTER **************************************/
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+footer .footer-overlay {
+  min-height: 20vh;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  align-items: baseline;
+}
+footer .footer-overlay .left-footer h2 {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #cccccc;
+  font-size: 1.5rem;
+}
+footer .footer-overlay .right-footer ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-around;
+}
+footer .footer-overlay .right-footer ul a {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #cccccc;
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+  footer .footer-overlay {
+    min-height: 15vh;
+    width: 90%;
+  }
+  footer .footer-overlay .left-footer h2 {
+    color: #111111;
+    font-family: "Open Sans", sans-serif, Arial, Helvetica;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #cccccc;
+    font-size: 1rem;
+  }
+  footer .footer-overlay .right-footer ul a {
+    color: #111111;
+    font-family: "Open Sans", sans-serif, Arial, Helvetica;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #cccccc;
+    font-size: 1rem;
   }
 }
 
