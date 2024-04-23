@@ -422,3 +422,68 @@ body {
         }
     }
 }
+/*** ABOUT **************************************/
+
+.gallery{
+    @include section-vh-sizing-desktop;
+    @include flex-box-center;
+    .gallery-overlay{
+        @include section-sizing-desktop;
+        @include flex-box-center;
+        gap: 0;
+        flex-wrap: wrap;
+        .gallery-photo{
+            width: 33.3%;
+            height: 15.2rem;
+            background-position: center;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            &:hover .gallery-photo-overlay{
+                opacity: 1;
+                visibility: visible;
+            }
+            .gallery-photo-overlay{
+                    transition: all .4s ease-out;
+                    width: 100%;
+                    height: 100%;
+                    opacity:0;
+                    background-color: $gallery-bg-color;
+                    visibility: hidden;
+
+                    @include flex-box-column-center;
+                    @include norm-text;
+                    font-size: 2.5rem;
+                    color: $color-yellow;
+                }
+        }
+        @include gallery-photos;
+    }
+
+    @media screen and (min-width:768px) and (max-width:1024px) {
+        @include section-vh-sizing-tablet;
+        .gallery-overlay{
+            @include section-sizing-tablet;
+
+            .gallery-photo{
+                height: 10.5rem;
+                background-position: center;
+                background-size: cover;
+            }
+        }    
+    }
+
+    @media screen and (min-width:320px) and (max-width:768px) {
+        @include section-vh-sizing-mobile;
+        
+        .gallery-overlay{
+            @include section-sizing-mobile;
+            @include flex-box-column-center;
+            .gallery-photo{
+                width: 100%;
+                height: 15.2rem;
+            }
+            @include gallery-photos;
+        }
+    }
+}
+
