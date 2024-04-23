@@ -614,14 +614,15 @@ body {
                 width: 100%;
                 margin-top: 3rem;
 
-                p{
+                p {
                     @include lighter-text;
                     text-transform: none;
                     margin-bottom: 1rem;
                     text-align: end;
                     font-size: 1.2rem;
                 }
-                h3{
+
+                h3 {
                     font-size: 1rem;
                 }
             }
@@ -633,19 +634,197 @@ body {
 
                 .info-div {
                     width: 100%;
-                    h2{
+
+                    h2 {
                         font-size: 1.8rem;
                     }
-                    p{
+
+                    p {
                         font-size: 1.1rem;
                     }
-                    .lighter-text{
+
+                    .lighter-text {
                         font-size: 1.1rem;
                     }
                 }
 
                 .img-div {
                     width: 60%;
+                }
+            }
+        }
+    }
+}
+
+/*** CUSTOMERS **************************************/
+
+.customers {
+    @include section-vh-sizing-desktop;
+    @include flex-box-center;
+
+    .customers-overlay {
+        @include section-sizing-desktop;
+        @include flex-box-column-center;
+        margin-top: 2rem;
+
+        .customers-title {
+            @include flex-box-column-center;
+            margin-bottom: 1rem;
+
+            h3 {
+                @include norm-text;
+                color: $body-border;
+                font-weight: 700;
+                letter-spacing: .3rem;
+            }
+
+            h2 {
+                @include bolder-text;
+                text-align: center;
+            }
+
+            .line-div {
+                @include line;
+            }
+        }
+
+        .customers-info {
+            @include flex-box;
+            gap: 1rem;
+            flex-wrap: wrap;
+
+            .cutomers-card {
+                width: 30%;
+                @include flex-box-column-center;
+
+                .customers-img-div {
+                    width: 40%;
+                    border-radius: 50%;
+                    margin-bottom: 1rem;
+
+                    img {
+                        border-radius: 50%;
+                    }
+                }
+
+                .customers-info-div {
+                    @include flex-box-column-center;
+
+                    p {
+                        @include lighter-text;
+                        text-transform: none;
+                        text-align: center;
+                        font-size: 1.2rem;
+                    }
+
+                    .line-div {
+                        @include line;
+                    }
+
+                    h2 {
+                        @include norm-text;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:768px) and (max-width:1024px) {
+        .customers-overlay {
+            @include section-sizing-desktop;
+            @include flex-box-column-center;
+
+            .customers-title {
+                @include flex-box-column-center;
+                margin-bottom: 1rem;
+
+                h2 {
+                    @include bolder-text;
+                    font-size: 1.8rem;
+                }
+
+                .line-div {
+                    @include line-tab;
+                }
+            }
+
+            .customers-info {
+
+                .cutomers-card {
+                    margin-top: 2rem;
+                    width: 45%;
+                    @include flex-box-column-center;
+
+                    .customers-info-div {
+                        @include flex-box-column-center;
+
+                        p {
+                            font-size: 1rem;
+                        }
+
+                        .line-div {
+                            @include line-tab;
+                        }
+
+                        h2 {
+                            @include norm-text;
+                            text-transform: capitalize;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:320px) and (max-width:768px) {
+        .customers-overlay {
+            @include section-sizing-mobile;
+            @include flex-box-column-center;
+
+            .customers-title {
+                @include flex-box-column-center;
+                margin-bottom: 1rem;
+
+                .line-div {
+                    @include line-tab;
+                }
+            }
+
+            .customers-info {
+                flex-wrap: wrap;
+
+                .cutomers-card {
+                    margin-top: 2rem;
+                    width: 100%;
+                    @include flex-box-column-center;
+
+                    .customers-info-div {
+                        @include flex-box-column-center;
+
+                        p {
+                            font-size: 1rem;
+                        }
+
+                        .line-div {
+                            @include line-tab;
+                        }
+
+                        h2 {
+                            @include norm-text;
+                            text-transform: capitalize;
+                            font-size: 1rem;
+                        }
+
+                        .line-div {
+                            @include line-tab;
+                            margin: 1rem 0;
+                        }
+                    }
+
+                    .customers-img-div {
+                        width: 25%;
+                    }
                 }
             }
         }
