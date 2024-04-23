@@ -827,4 +827,232 @@ body {
   }
 }
 
+/*** CUSTOMERS **************************************/
+.customers {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.customers .customers-overlay {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.customers .customers-overlay .customers-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.customers .customers-overlay .customers-title h3 {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #cccccc;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+}
+.customers .customers-overlay .customers-title h2 {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  font-weight: 700;
+  font-size: 2.2rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+.customers .customers-overlay .customers-title .line-div {
+  border: 0.2rem solid #d2b356;
+  width: 2.5rem;
+  margin: 2rem 0;
+}
+.customers .customers-overlay .customers-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.customers .customers-overlay .customers-info .cutomers-card {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.customers .customers-overlay .customers-info .cutomers-card .customers-img-div {
+  width: 40%;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+.customers .customers-overlay .customers-info .cutomers-card .customers-img-div img {
+  border-radius: 50%;
+}
+.customers .customers-overlay .customers-info .cutomers-card .customers-info-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.customers .customers-overlay .customers-info .cutomers-card .customers-info-div p {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #525252;
+  text-transform: none;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.customers .customers-overlay .customers-info .cutomers-card .customers-info-div p::first-letter {
+  text-transform: capitalize;
+}
+.customers .customers-overlay .customers-info .cutomers-card .customers-info-div .line-div {
+  border: 0.2rem solid #d2b356;
+  width: 2.5rem;
+  margin: 2rem 0;
+}
+.customers .customers-overlay .customers-info .cutomers-card .customers-info-div h2 {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .customers .customers-overlay {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .customers .customers-overlay .customers-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .customers .customers-overlay .customers-title h2 {
+    color: #111111;
+    font-family: "Open Sans", sans-serif, Arial, Helvetica;
+    font-weight: 700;
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    font-size: 1.8rem;
+  }
+  .customers .customers-overlay .customers-title .line-div {
+    border: 0.15rem solid #d2b356;
+    width: 2rem;
+    margin: 1.5rem 0;
+  }
+  .customers .customers-overlay .customers-info .cutomers-card {
+    margin-top: 2rem;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .customers .customers-overlay .customers-info .cutomers-card .customers-info-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .customers .customers-overlay .customers-info .cutomers-card .customers-info-div p {
+    font-size: 1rem;
+  }
+  .customers .customers-overlay .customers-info .cutomers-card .customers-info-div .line-div {
+    border: 0.15rem solid #d2b356;
+    width: 2rem;
+    margin: 1.5rem 0;
+  }
+  .customers .customers-overlay .customers-info .cutomers-card .customers-info-div h2 {
+    color: #111111;
+    font-family: "Open Sans", sans-serif, Arial, Helvetica;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: capitalize;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .customers .customers-overlay {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .customers .customers-overlay .customers-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .customers .customers-overlay .customers-title .line-div {
+    border: 0.15rem solid #d2b356;
+    width: 2rem;
+    margin: 1.5rem 0;
+  }
+  .customers .customers-overlay .customers-info {
+    flex-wrap: wrap;
+  }
+  .customers .customers-overlay .customers-info .cutomers-card {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .customers .customers-overlay .customers-info .cutomers-card .customers-info-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .customers .customers-overlay .customers-info .cutomers-card .customers-info-div p {
+    font-size: 1rem;
+  }
+  .customers .customers-overlay .customers-info .cutomers-card .customers-info-div .line-div {
+    border: 0.15rem solid #d2b356;
+    width: 2rem;
+    margin: 1.5rem 0;
+  }
+  .customers .customers-overlay .customers-info .cutomers-card .customers-info-div h2 {
+    color: #111111;
+    font-family: "Open Sans", sans-serif, Arial, Helvetica;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 1rem;
+  }
+  .customers .customers-overlay .customers-info .cutomers-card .customers-info-div .line-div {
+    border: 0.15rem solid #d2b356;
+    width: 2rem;
+    margin: 1.5rem 0;
+    margin: 1rem 0;
+  }
+  .customers .customers-overlay .customers-info .cutomers-card .customers-img-div {
+    width: 25%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
