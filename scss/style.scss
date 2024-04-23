@@ -299,7 +299,7 @@ body {
 
             h2 {
                 @include bolder-text;
-                width: 90%
+                width: 90%;
             }
 
             .header-line {
@@ -351,31 +351,34 @@ body {
     @media screen and (min-width:768px) and (max-width:1024px) {
         @include section-vh-sizing-tablet;
         margin-top: 3rem;
+
         .about-overlay {
             @include section-sizing-tablet;
             @include flex-box-column-center;
-            
-    
+
+
             .left-about {
                 @include flex-box-column-center;
-                width: 100%;    
-                h2{
+                width: 100%;
+
+                h2 {
                     text-align: center;
                 }
+
                 p {
                     text-align: center;
                 }
             }
-    
+
             .right-about {
                 margin-top: 4rem;
                 width: 100%;
-    
+
                 .about-card {
                     @include flex-box-column-center;
                     margin-bottom: 2rem;
                     width: 45%;
-    
+
                     p {
                         text-align: center;
                     }
@@ -387,33 +390,36 @@ body {
     @media screen and (min-width:320px) and (max-width:768px) {
         @include section-vh-sizing-mobile;
         margin-top: 3rem;
+
         .about-overlay {
             @include section-sizing-mobile;
             @include flex-box-column-center;
-            
-    
+
+
             .left-about {
                 @include flex-box-column-center;
-                width: 100%;    
-                h2{
+                width: 100%;
+
+                h2 {
                     @include bolder-text-mob;
                     text-align: center;
                 }
+
                 p {
                     text-align: center;
                 }
             }
-    
+
             .right-about {
                 @include flex-box-column-center;
                 margin-top: 4rem;
                 width: 100%;
-    
+
                 .about-card {
                     @include flex-box-column-center;
                     margin-bottom: 2rem;
                     width: 100%;
-    
+
                     p {
                         text-align: center;
                     }
@@ -422,68 +428,226 @@ body {
         }
     }
 }
+
 /*** ABOUT **************************************/
 
-.gallery{
+.gallery {
     @include section-vh-sizing-desktop;
     @include flex-box-center;
-    .gallery-overlay{
+
+    .gallery-overlay {
         @include section-sizing-desktop;
         @include flex-box-center;
         gap: 0;
         flex-wrap: wrap;
-        .gallery-photo{
+
+        .gallery-photo {
             width: 33.3%;
             height: 15.2rem;
             background-position: center;
             background-size: 100%;
             background-repeat: no-repeat;
-            &:hover .gallery-photo-overlay{
+
+            &:hover .gallery-photo-overlay {
                 opacity: 1;
                 visibility: visible;
             }
-            .gallery-photo-overlay{
-                    transition: all .4s ease-out;
-                    width: 100%;
-                    height: 100%;
-                    opacity:0;
-                    background-color: $gallery-bg-color;
-                    visibility: hidden;
 
-                    @include flex-box-column-center;
-                    @include norm-text;
-                    font-size: 2.5rem;
-                    color: $color-yellow;
-                }
+            .gallery-photo-overlay {
+                transition: all .4s ease-out;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                background-color: $gallery-bg-color;
+                visibility: hidden;
+
+                @include flex-box-column-center;
+                @include norm-text;
+                font-size: 2.5rem;
+                color: $color-yellow;
+            }
         }
+
         @include gallery-photos;
     }
 
     @media screen and (min-width:768px) and (max-width:1024px) {
         @include section-vh-sizing-tablet;
-        .gallery-overlay{
+
+        .gallery-overlay {
             @include section-sizing-tablet;
 
-            .gallery-photo{
+            .gallery-photo {
                 height: 10.5rem;
                 background-position: center;
                 background-size: cover;
             }
-        }    
+        }
     }
 
     @media screen and (min-width:320px) and (max-width:768px) {
         @include section-vh-sizing-mobile;
-        
-        .gallery-overlay{
+
+        .gallery-overlay {
             @include section-sizing-mobile;
             @include flex-box-column-center;
-            .gallery-photo{
+
+            .gallery-photo {
                 width: 100%;
                 height: 15.2rem;
             }
+
             @include gallery-photos;
         }
     }
 }
 
+/*** SERVICES **************************************/
+
+.services {
+    @include section-vh-sizing-desktop;
+    @include flex-box-center;
+
+    .services-overlay {
+        @include section-sizing-desktop;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+        .services-quote {
+            width: 28%;
+
+            p {
+
+                @include lighter-text;
+                text-transform: none;
+                margin-bottom: 1rem;
+                text-align: end;
+                font-size: 1.5rem;
+            }
+
+            h3 {
+                @include lighter-text;
+                text-transform: capitalize;
+                text-align: end;
+                font-weight: 500;
+            }
+        }
+
+        .services-info {
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+            width: 65%;
+
+            .info-div {
+                width: 48%;
+
+                h3 {
+                    @include norm-text;
+                    color: $body-border;
+                    font-weight: 700;
+                    letter-spacing: .3rem;
+                    margin-bottom: 1rem;
+                }
+
+                h2 {
+                    @include bolder-text;
+                    width: 90%;
+                }
+
+                .line {
+                    @include line;
+                }
+
+                p {
+                    @include norm-text;
+                    text-transform: none;
+                    margin: 2rem 0;
+                }
+
+                .lighter-text {
+                    @include lighter-text;
+                    font-size: 1.1rem;
+                    width: 90%;
+                    color: $body-border;
+                }
+
+                .last-p {
+                    margin-bottom: 3rem;
+                }
+
+                a {
+                    @include long-button;
+                }
+            }
+
+            .img-div {
+                width: 50%;
+            }
+        }
+    }
+
+    @media screen and (min-width:768px) and (max-width:1024px) {
+        .services-overlay {
+            @include section-sizing-tablet;
+            @include flex-box-column-center;
+            gap: 4rem;
+
+            .services-quote {
+                width: 100%;
+            }
+
+            .services-info {
+                gap: 2rem;
+                width: 100%;
+            }
+        }
+    }
+
+    @media screen and (min-width:320px) and (max-width:768px) {
+        .services-overlay {
+            @include section-sizing-mobile;
+            @include flex-box-column-center;
+
+            .services-quote {
+                width: 100%;
+                margin-top: 3rem;
+
+                p{
+                    @include lighter-text;
+                    text-transform: none;
+                    margin-bottom: 1rem;
+                    text-align: end;
+                    font-size: 1.2rem;
+                }
+                h3{
+                    font-size: 1rem;
+                }
+            }
+
+            .services-info {
+                @include flex-box-column-center;
+                gap: 2rem;
+                width: 100%;
+
+                .info-div {
+                    width: 100%;
+                    h2{
+                        font-size: 1.8rem;
+                    }
+                    p{
+                        font-size: 1.1rem;
+                    }
+                    .lighter-text{
+                        font-size: 1.1rem;
+                    }
+                }
+
+                .img-div {
+                    width: 60%;
+                }
+            }
+        }
+    }
+}
