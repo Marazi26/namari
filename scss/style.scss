@@ -780,6 +780,8 @@ body {
     }
 
     @media screen and (min-width:320px) and (max-width:768px) {
+        margin: 2rem 0;
+
         .customers-overlay {
             @include section-sizing-mobile;
             @include flex-box-column-center;
@@ -1043,4 +1045,250 @@ body {
         }
     }
 
+}
+
+/*** PRICING **************************************/
+
+.pricing {
+    @include section-vh-sizing-desktop;
+    @include flex-box-center;
+    background-color: $pricing-section-bg;
+    padding-bottom: 5rem;
+    .pricing-overlay {
+        @include section-sizing-desktop;
+        @include flex-box-column-center;
+
+        .pricing-title {
+            @include flex-box-column-center;
+
+            h3 {
+                @include norm-text;
+                color: $body-border;
+                font-weight: 700;
+                letter-spacing: .3rem;
+                margin-bottom: 1rem;
+            }
+
+            h2 {
+                @include bolder-text;
+                text-transform: lowercase;
+
+                &::first-letter {
+                    text-transform: capitalize;
+                }
+
+                width: 100%;
+            }
+
+            .line-div {
+                @include line;
+            }
+
+            p {
+                @include lighter-text;
+                font-size: 1.1rem;
+                width: 90%;
+            }
+        }
+
+        .pricing-cards {
+            @include flex-box;
+
+            .pricing-card {
+                width: 31%;
+                padding: 1rem .5rem;
+                background-color: $color-white;
+                transition: .1s linear;
+
+                &:hover {
+                    border: .5rem solid $color-yellow;
+                    padding: 1rem 0;
+                }
+
+
+                .package-type {
+                    @include flex-box-column-center;
+                    padding-top: 1rem;
+
+                    h2 {
+                        @include norm-text;
+                        font-weight: 700;
+                    }
+
+                    p {
+                        @include norm-text;
+                        color: $body-border;
+                        text-transform: none;
+                        font-style: italic;
+                        font-size: 1rem;
+                        margin-bottom: 1rem;
+                    }
+                }
+
+                .package-price {
+                    @include flex-box-column-center;
+                    padding: 1rem 0;
+                    background-color: $pricing-section-bg;
+
+                    h2 {
+                        @include bolder-text;
+                        font-size: 4rem;
+                        position: relative;
+
+                        span {
+                            font-size: 1.5rem;
+                            position: absolute;
+                            top: 0;
+                            left: -1rem;
+                        }
+                    }
+
+                    p {
+                        @include lighter-text;
+                        color: $body-border;
+                        font-weight: 400;
+                        font-style: italic;
+                        margin-bottom: 1rem;
+                        text-align: center;
+                    }
+                }
+
+                .active-package {
+                    background-color: $color-yellow;
+
+                    p {
+                        color: $color-white;
+                    }
+                }
+
+                .package-info {
+                    ul {
+                        margin: 2rem 0;
+
+                        li {
+                            @include lighter-text;
+                            width: 100%;
+                            padding: .5rem 0;
+                            text-transform: capitalize;
+                            text-align: center;
+                            font-weight: 400;
+                            font-size: 1.1rem;
+                            border-bottom: 1px solid $pricing-section-bg;
+
+                            &:last-child {
+                                border: none;
+                            }
+                        }
+                    }
+                }
+
+                .buy-button {
+                    @include flex-box-column-center;
+                    padding: 3rem 0;
+
+                    a {
+
+                        @include long-button;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:768px) and (max-width:1024px) {
+        @include section-vh-sizing-tablet;
+
+        .pricing-overlay {
+            margin: 3rem 0;
+            @include section-sizing-tablet;
+            @include flex-box-column-center;
+        }
+    }
+
+    @media screen and (min-width:320px) and (max-width:768px) {
+        @include section-vh-sizing-mobile;
+
+        .pricing-overlay {
+            margin: 3rem 0;
+            @include section-sizing-mobile;
+            @include flex-box-column-center;
+
+            .pricing-title {
+                @include flex-box-column-center;
+
+                h2 {
+                    text-align: center;
+                }
+
+                .line-div {
+                    @include line-tab;
+                }
+            }
+
+            .pricing-cards {
+                @include flex-box;
+                flex-wrap: wrap;
+
+                .pricing-card {
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+}
+
+/*** FOOTER **************************************/
+
+footer{
+    @include flex-box-center;
+    margin-top: 3rem;
+    .footer-overlay{
+        min-height: 20vh;
+        @include section-sizing-desktop;
+        @include flex-box;
+        align-items: baseline;
+        .left-footer{
+            h2{
+                @include norm-text;
+                color: $body-border;
+                font-size: 1.5rem;
+            }
+        }
+        .right-footer{
+            ul {
+                @include flex-box;
+                justify-content: space-around;
+
+                a {
+                    @include norm-text;
+                    color: $body-border;
+                font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:320px) and (max-width:1024px) {
+        .footer-overlay{
+            min-height: 15vh;
+            @include section-sizing-mobile;
+            .left-footer{
+                h2{
+                    @include norm-text;
+                    color: $body-border;
+                    font-size: 1rem;
+                }
+            }
+            .right-footer{
+                ul {
+                    a {
+                        @include norm-text;
+                        color: $body-border;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
 }
