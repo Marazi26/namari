@@ -11,13 +11,13 @@
     width: 95%;
 }
 @mixin section-vh-sizing-tablet{
-    min-height: 70vh;
+    min-height: 40vh;
 }
 @mixin section-sizing-mobile{
     width: 90%;
 }
 @mixin section-vh-sizing-mobile{
-    min-height: 60vh;
+    min-height: 50vh;
 }
 
 /***     FLEX BOXES     ********************************/

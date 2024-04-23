@@ -419,7 +419,7 @@ body {
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .about {
-    min-height: 70vh;
+    min-height: 40vh;
     margin-top: 3rem;
   }
   .about .about-overlay {
@@ -460,7 +460,7 @@ body {
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .about {
-    min-height: 60vh;
+    min-height: 50vh;
     margin-top: 3rem;
   }
   .about .about-overlay {
@@ -575,7 +575,7 @@ body {
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .gallery {
-    min-height: 70vh;
+    min-height: 40vh;
   }
   .gallery .gallery-overlay {
     width: 95%;
@@ -588,7 +588,7 @@ body {
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .gallery {
-    min-height: 60vh;
+    min-height: 50vh;
   }
   .gallery .gallery-overlay {
     width: 90%;
@@ -932,8 +932,11 @@ body {
   text-transform: capitalize;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  .customers {
+    min-height: 40vh;
+  }
   .customers .customers-overlay {
-    width: 90%;
+    width: 95%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1052,5 +1055,215 @@ body {
   }
   .customers .customers-overlay .customers-info .cutomers-card .customers-img-div {
     width: 25%;
+  }
+}
+
+/*** TESTIMONIAL **************************************/
+.testimonilas {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonilas .testimonilas-overlay {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.testimonilas .testimonilas-overlay .testimonilas-info {
+  width: 32%;
+}
+.testimonilas .testimonilas-overlay .testimonilas-info h3 {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #cccccc;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  margin-bottom: 1rem;
+}
+.testimonilas .testimonilas-overlay .testimonilas-info h2 {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  font-weight: 700;
+  font-size: 2.2rem;
+  text-transform: capitalize;
+  text-transform: lowercase;
+  width: 90%;
+}
+.testimonilas .testimonilas-overlay .testimonilas-info h2::first-letter {
+  text-transform: capitalize;
+}
+.testimonilas .testimonilas-overlay .testimonilas-info .line-div {
+  border: 0.2rem solid #d2b356;
+  width: 2.5rem;
+  margin: 2rem 0;
+}
+.testimonilas .testimonilas-overlay .testimonilas-info p {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #525252;
+  font-size: 1.1rem;
+  width: 90%;
+}
+.testimonilas .testimonilas-overlay .testimonilas-info p::first-letter {
+  text-transform: capitalize;
+}
+.testimonilas .testimonilas-overlay .testimonilas-imges {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 65%;
+}
+.testimonilas .testimonilas-overlay .testimonilas-imges .testimonials-img {
+  width: 33.3%;
+  position: relative;
+}
+.testimonilas .testimonilas-overlay .testimonilas-imges .testimonials-img:hover .testimonials-img-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+.testimonilas .testimonilas-overlay .testimonilas-imges .testimonials-img .testimonials-img-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #111111db;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  transition: 0.3s ease-out;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  font-weight: 700;
+  font-size: 2.2rem;
+  text-transform: capitalize;
+  color: #ffffff;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 786px) and (max-width: 1024px) {
+  .testimonilas {
+    min-height: 40vh;
+  }
+  .testimonilas .testimonilas-overlay {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  .testimonilas .testimonilas-overlay .testimonilas-info {
+    width: 49%;
+  }
+  .testimonilas .testimonilas-overlay .testimonilas-info h3 {
+    font-size: 1rem;
+  }
+  .testimonilas .testimonilas-overlay .testimonilas-info h2 {
+    width: 100%;
+    font-size: 1.8rem;
+  }
+  .testimonilas .testimonilas-overlay .testimonilas-info .line-div {
+    border: 0.15rem solid #d2b356;
+    width: 2rem;
+    margin: 1.5rem 0;
+  }
+  .testimonilas .testimonilas-overlay .testimonilas-info p {
+    font-size: 1rem;
+    width: 100%;
+  }
+  .testimonilas .testimonilas-overlay .testimonilas-imges {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 49%;
+  }
+  .testimonilas .testimonilas-overlay .testimonilas-imges .testimonials-img {
+    width: 33.3%;
+    position: relative;
+  }
+  .testimonilas .testimonilas-overlay .testimonilas-imges .testimonials-img:hover .testimonials-img-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+  .testimonilas .testimonilas-overlay .testimonilas-imges .testimonials-img .testimonials-img-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #111111db;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    transition: 0.3s ease-out;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #111111;
+    font-family: "Open Sans", sans-serif, Arial, Helvetica;
+    font-weight: 700;
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .testimonilas {
+    min-height: 50vh;
+  }
+  .testimonilas .testimonilas-overlay {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .testimonilas .testimonilas-overlay .testimonilas-info {
+    width: 100%;
+  }
+  .testimonilas .testimonilas-overlay .testimonilas-info h3 {
+    font-size: 1rem;
+  }
+  .testimonilas .testimonilas-overlay .testimonilas-info h2 {
+    width: 100%;
+    font-size: 1.8rem;
+  }
+  .testimonilas .testimonilas-overlay .testimonilas-info .line-div {
+    border: 0.15rem solid #d2b356;
+    width: 2rem;
+    margin: 1.5rem 0;
+  }
+  .testimonilas .testimonilas-overlay .testimonilas-info p {
+    font-size: 1.1rem;
+    width: 100%;
+  }
+  .testimonilas .testimonilas-overlay .testimonilas-imges {
+    width: 100%;
   }
 }
