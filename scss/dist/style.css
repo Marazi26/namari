@@ -24,158 +24,193 @@ img {
 
 body {
   border: 1.4rem solid #cccccc;
+  border-width: 0 1.4rem 0 1.4rem;
+}
+body > :first-child {
+  width: 100%;
+  height: 1.4rem;
+  background-color: #cccccc;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 56;
+}
+body .last-child {
+  width: 100%;
+  height: 1.4rem;
+  background-color: #cccccc;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 56;
 }
 @media screen and (min-width: 320px) and (max-width: 1024px) {
   body {
     border: none;
   }
+  body > :first-child {
+    display: none;
+  }
+  body .last-child {
+    display: none;
+  }
 }
 
 /*** NAV **************************************/
-.nav-header-div {
+.nav-header-container {
   background-image: url("../assets/navheader/banner-image-1.jpg");
   background-size: cover;
   background-position: top center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   padding-bottom: 3%;
   min-height: 100vh;
 }
-.nav-header-div nav {
+.nav-header-container nav {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 3%;
+  margin: 0 1.4rem;
 }
-.nav-header-div nav .nav-overlay {
+.nav-header-container nav .nav-overlay {
   width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
 }
-.nav-header-div nav .nav-overlay .logo-nav {
+.nav-header-container nav .nav-overlay .logo-nav {
   width: 10%;
 }
-.nav-header-div nav .nav-overlay .logo-nav img {
+.nav-header-container nav .nav-overlay .logo-nav img {
   width: 100%;
 }
-.nav-header-div nav .nav-overlay .menu-nav {
+.nav-header-container nav .nav-overlay .menu-nav {
   width: 45%;
 }
-.nav-header-div nav .nav-overlay .menu-nav ul {
+.nav-header-container nav .nav-overlay .menu-nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
   justify-content: space-around;
 }
-.nav-header-div nav .nav-overlay .menu-nav ul li a {
+.nav-header-container nav .nav-overlay .menu-nav ul li a {
   color: #111111;
   font-family: "Open Sans", sans-serif, Arial, Helvetica;
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 400;
 }
-.nav-header-div nav .nav-overlay .social-medias-nav {
+.nav-header-container nav .nav-overlay .social-medias-nav {
   width: 14%;
 }
-.nav-header-div nav .nav-overlay .social-medias-nav ul {
+.nav-header-container nav .nav-overlay .social-medias-nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
   justify-content: space-around;
 }
-.nav-header-div nav .nav-overlay .social-medias-nav ul a {
+.nav-header-container nav .nav-overlay .social-medias-nav ul a {
   color: #111111;
   font-family: "Open Sans", sans-serif, Arial, Helvetica;
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 400;
 }
-.nav-header-div nav .nav-overlay .burger-menu {
+.nav-header-container nav .nav-overlay .burger-menu {
   display: none;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .nav-header-div nav .nav-overlay {
+  .nav-header-container nav {
+    margin: 0;
+  }
+  .nav-header-container nav .nav-overlay {
     width: 95%;
     justify-content: space-around;
     gap: 2rem;
   }
-  .nav-header-div nav .nav-overlay .logo-nav {
+  .nav-header-container nav .nav-overlay .logo-nav {
     width: 75%;
   }
-  .nav-header-div nav .nav-overlay .logo-nav img {
+  .nav-header-container nav .nav-overlay .logo-nav img {
     width: 20%;
   }
-  .nav-header-div nav .nav-overlay .menu-nav {
+  .nav-header-container nav .nav-overlay .menu-nav {
     display: none;
   }
-  .nav-header-div nav .nav-overlay .social-medias-nav {
+  .nav-header-container nav .nav-overlay .social-medias-nav {
     width: 20%;
   }
-  .nav-header-div nav .nav-overlay .burger-menu {
+  .nav-header-container nav .nav-overlay .burger-menu {
     display: block;
   }
-  .nav-header-div nav .nav-overlay .burger-menu i {
+  .nav-header-container nav .nav-overlay .burger-menu i {
     font-size: 1.2rem;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
-  .nav-header-div nav .nav-overlay {
+  .nav-header-container nav {
+    margin: 0;
+  }
+  .nav-header-container nav .nav-overlay {
     width: 95%;
     justify-content: space-around;
     gap: 2rem;
   }
-  .nav-header-div nav .nav-overlay .logo-nav {
+  .nav-header-container nav .nav-overlay .logo-nav {
     width: 30%;
   }
-  .nav-header-div nav .nav-overlay .logo-nav img {
+  .nav-header-container nav .nav-overlay .logo-nav img {
     width: 80%;
   }
-  .nav-header-div nav .nav-overlay .menu-nav {
+  .nav-header-container nav .nav-overlay .menu-nav {
     display: none;
   }
-  .nav-header-div nav .nav-overlay .social-medias-nav {
+  .nav-header-container nav .nav-overlay .social-medias-nav {
     width: 30%;
   }
-  .nav-header-div nav .nav-overlay .social-medias-nav ul a {
+  .nav-header-container nav .nav-overlay .social-medias-nav ul a {
     font-size: 0.9rem;
   }
-  .nav-header-div nav .nav-overlay .burger-menu {
+  .nav-header-container nav .nav-overlay .burger-menu {
     width: 10%;
     display: flex;
     justify-content: center;
   }
-  .nav-header-div nav .nav-overlay .burger-menu i {
+  .nav-header-container nav .nav-overlay .burger-menu i {
     font-size: 1.2rem;
   }
 }
-.nav-header-div header {
+.nav-header-container header {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
 }
-.nav-header-div header .header-overlay {
+.nav-header-container header .header-overlay {
   width: 90%;
 }
-.nav-header-div header .header-overlay .header-line {
+.nav-header-container header .header-overlay .header-line {
   border: 0.2rem solid #d2b356;
   width: 2.5rem;
   margin: 2rem 0;
 }
-.nav-header-div header .header-overlay .line-2 {
+.nav-header-container header .header-overlay .line-2 {
   margin-bottom: 5rem;
 }
-.nav-header-div header .header-overlay h1 {
+.nav-header-container header .header-overlay h1 {
   width: 41%;
   font-family: "Open Sans", sans-serif, Arial, Helvetica;
   font-size: 4.5rem;
   font-weight: 900;
   line-height: 3.8rem;
 }
-.nav-header-div header .header-overlay p {
+.nav-header-container header .header-overlay p {
   width: 35%;
   margin: 2.5rem 0 1rem 0;
   color: #111111;
@@ -188,10 +223,10 @@ body {
   font-size: 1.2rem;
   color: #525252;
 }
-.nav-header-div header .header-overlay p::first-letter {
+.nav-header-container header .header-overlay p::first-letter {
   text-transform: capitalize;
 }
-.nav-header-div header .header-overlay a {
+.nav-header-container header .header-overlay a {
   margin: 5rem 0;
   color: #111111;
   font-family: "Open Sans", sans-serif, Arial, Helvetica;
@@ -203,29 +238,34 @@ body {
   padding: 1%;
   transition: 0.3s linear;
 }
-.nav-header-div header .header-overlay a:hover {
+.nav-header-container header .header-overlay a:hover {
   border-color: #d2b356;
   color: #d2b356;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .nav-header-div header .header-overlay {
-    padding-top: 10%;
-    width: 95%;
+  .nav-header-container header {
+    align-items: flex-start;
+    min-height: 100vh;
   }
-  .nav-header-div header .header-overlay .header-line {
+  .nav-header-container header .header-overlay {
+    min-height: 100vh;
+    width: 95%;
+    padding-top: 10%;
+  }
+  .nav-header-container header .header-overlay .header-line {
     border: 0.15rem solid #d2b356;
     width: 2rem;
     margin: 1.5rem 0;
   }
-  .nav-header-div header .header-overlay .line-2 {
+  .nav-header-container header .header-overlay .line-2 {
     margin-bottom: 5rem;
   }
-  .nav-header-div header .header-overlay h1 {
+  .nav-header-container header .header-overlay h1 {
     width: 38%;
     font-size: 3.8rem;
     line-height: 3.4rem;
   }
-  .nav-header-div header .header-overlay p {
+  .nav-header-container header .header-overlay p {
     width: 35%;
     margin: 2.5rem 0 1rem 0;
     color: #111111;
@@ -238,11 +278,11 @@ body {
     font-size: 1.2rem;
     color: #525252;
   }
-  .nav-header-div header .header-overlay p::first-letter {
+  .nav-header-container header .header-overlay p::first-letter {
     text-transform: capitalize;
   }
-  .nav-header-div header .header-overlay a {
-    margin: 5rem 0;
+  .nav-header-container header .header-overlay a {
+    margin: 1rem 0;
     color: #111111;
     font-family: "Open Sans", sans-serif, Arial, Helvetica;
     text-transform: uppercase;
@@ -254,27 +294,27 @@ body {
     transition: 0.3s linear;
     padding: 1.5%;
   }
-  .nav-header-div header .header-overlay a:hover {
+  .nav-header-container header .header-overlay a:hover {
     border-color: #d2b356;
     color: #d2b356;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
-  .nav-header-div header .header-overlay {
+  .nav-header-container header .header-overlay {
     padding-top: 10%;
     width: 90%;
   }
-  .nav-header-div header .header-overlay .header-line {
+  .nav-header-container header .header-overlay .header-line {
     border: 0.12rem solid #d2b356;
     width: 1rem;
     margin: 1.5rem 0;
   }
-  .nav-header-div header .header-overlay h1 {
+  .nav-header-container header .header-overlay h1 {
     min-width: 70%;
     font-size: 3rem;
     line-height: 3rem;
   }
-  .nav-header-div header .header-overlay p {
+  .nav-header-container header .header-overlay p {
     width: 60%;
     margin: 2.5rem 0 1rem 0;
     color: #111111;
@@ -287,10 +327,10 @@ body {
     font-size: 1.2rem;
     color: #525252;
   }
-  .nav-header-div header .header-overlay p::first-letter {
+  .nav-header-container header .header-overlay p::first-letter {
     text-transform: capitalize;
   }
-  .nav-header-div header .header-overlay a {
+  .nav-header-container header .header-overlay a {
     margin: 5rem 0;
     color: #111111;
     font-family: "Open Sans", sans-serif, Arial, Helvetica;
@@ -303,19 +343,19 @@ body {
     transition: 0.3s linear;
     padding: 1.5%;
   }
-  .nav-header-div header .header-overlay a:hover {
+  .nav-header-container header .header-overlay a:hover {
     border-color: #d2b356;
     color: #d2b356;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .nav-header-div {
+  .nav-header-container {
     background-size: 180%;
     background-position: top center;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
-  .nav-header-div {
+  .nav-header-container {
     padding-bottom: 10%;
     background-size: cover;
     background-position: top center;
@@ -1278,7 +1318,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #f5f5f5;
-  padding-bottom: 5rem;
+  padding-bottom: 7rem;
 }
 .pricing .pricing-overlay {
   width: 90%;
@@ -1292,6 +1332,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 3.5rem;
+  padding-bottom: 4rem;
 }
 .pricing .pricing-overlay .pricing-title h3 {
   color: #111111;
@@ -1481,6 +1523,7 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .pricing {
     min-height: 40vh;
+    padding-bottom: 3rem;
   }
   .pricing .pricing-overlay {
     margin: 3rem 0;
@@ -1494,9 +1537,10 @@ body {
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .pricing {
     min-height: 50vh;
+    padding-bottom: 3rem;
   }
   .pricing .pricing-overlay {
-    margin: 3rem 0;
+    margin: 0;
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -1537,7 +1581,7 @@ footer {
   margin-top: 3rem;
 }
 footer .footer-overlay {
-  min-height: 20vh;
+  min-height: 15vh;
   width: 90%;
   display: flex;
   justify-content: space-between;
@@ -1552,7 +1596,8 @@ footer .footer-overlay .left-footer h2 {
   font-size: 1rem;
   font-weight: 400;
   color: #cccccc;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  text-transform: capitalize;
 }
 footer .footer-overlay .right-footer ul {
   display: flex;
@@ -1572,7 +1617,7 @@ footer .footer-overlay .right-footer ul a {
 }
 @media screen and (min-width: 320px) and (max-width: 1024px) {
   footer .footer-overlay {
-    min-height: 15vh;
+    min-height: 10vh;
     width: 90%;
   }
   footer .footer-overlay .left-footer h2 {
