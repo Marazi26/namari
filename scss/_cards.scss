@@ -1,0 +1,26 @@
+@mixin line {
+    border: .2rem solid $color-yellow;
+    width: 2.5rem;
+    margin: 2rem 0;
+}
+
+@mixin line-tab {
+    border: .15rem solid $color-yellow;
+    width: 2rem;
+    margin: 1.5rem 0;
+}
+
+@mixin line-mob {
+    border: .12rem solid $color-yellow;
+    width: 1rem;
+    margin: 1.5rem 0;
+}
+
+@mixin  gallery-photos{
+    .photo1{background-image: url("../assets/gallery/gallery-image-1.jpg");}
+    .photo2{background-image: url("../assets/gallery/gallery-image-2.jpg");}
+    .photo3{background-image: url("../assets/gallery/gallery-image-3.jpg");}
+    .photo4{background-image: url("../assets/gallery/gallery-image-4.jpg");}
+    .photo5{background-image: url("../assets/gallery/gallery-image-5.jpg");}
+    .photo6{background-image: url("../assets/gallery/gallery-image-6.jpg");}
+}

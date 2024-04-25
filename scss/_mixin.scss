@@ -1,0 +1,94 @@
+@import "./variables" ;
+
+@mixin section-sizing-desktop{
+    width: 90%;
+}
+@mixin section-vh-sizing-desktop{
+    min-height: 100vh;
+}
+
+@mixin section-sizing-tablet{
+    width: 95%;
+}
+@mixin section-vh-sizing-tablet{
+    min-height: 40vh;
+}
+@mixin section-sizing-mobile{
+    width: 90%;
+}
+@mixin section-vh-sizing-mobile{
+    min-height: 50vh;
+}
+
+/***     FLEX BOXES     ********************************/
+
+@mixin flex-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+@mixin flex-box-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-box-column-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-box-column-start{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/***    NORMAL TEXTS   **************************************/
+@mixin norm-text{
+    color: $color-black;
+    font-family: 'Open Sans',sans-serif,Arial,Helvetica;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+@mixin bolder-text{
+    color: $color-black;
+    font-family: 'Open Sans',sans-serif,Arial,Helvetica;
+    font-weight: 700;
+    font-size: 2.2rem;
+    text-transform: capitalize
+}
+@mixin bolder-text-mob{
+    @include bolder-text;
+    font-size: 1.8rem;
+}
+@mixin lighter-text{
+    @include norm-text;
+                text-transform: lowercase;
+                font-weight: 300;
+                font-size: 1.2rem;
+                color:  $color-gray;
+                &::first-letter{
+                    text-transform: capitalize;
+                }
+}
+
+/***     BUTTON          ************************************/
+@mixin long-button{
+    @include norm-text;
+    font-weight: bold;
+    border: .2rem solid $color-black;
+    padding: 1%;
+    transition: .3s linear;
+    &:hover{
+        border-color: $color-yellow;
+        color:$color-yellow;
+    }
+}

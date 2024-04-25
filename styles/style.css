@@ -1,0 +1,1598 @@
+/***     FLEX BOXES     ********************************/
+/***    NORMAL TEXTS   **************************************/
+/***     BUTTON          ************************************/
+/******** RESET *********************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  border: 1.4rem solid #cccccc;
+}
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+  body {
+    border: none;
+  }
+}
+
+/*** NAV **************************************/
+.nav-header-div {
+  background-image: url("../assets/navheader/banner-image-1.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+  padding-bottom: 3%;
+  min-height: 100vh;
+}
+.nav-header-div nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3%;
+}
+.nav-header-div nav .nav-overlay {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.nav-header-div nav .nav-overlay .logo-nav {
+  width: 10%;
+}
+.nav-header-div nav .nav-overlay .logo-nav img {
+  width: 100%;
+}
+.nav-header-div nav .nav-overlay .menu-nav {
+  width: 45%;
+}
+.nav-header-div nav .nav-overlay .menu-nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-around;
+}
+.nav-header-div nav .nav-overlay .menu-nav ul li a {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.nav-header-div nav .nav-overlay .social-medias-nav {
+  width: 14%;
+}
+.nav-header-div nav .nav-overlay .social-medias-nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-around;
+}
+.nav-header-div nav .nav-overlay .social-medias-nav ul a {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.nav-header-div nav .nav-overlay .burger-menu {
+  display: none;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .nav-header-div nav .nav-overlay {
+    width: 95%;
+    justify-content: space-around;
+    gap: 2rem;
+  }
+  .nav-header-div nav .nav-overlay .logo-nav {
+    width: 75%;
+  }
+  .nav-header-div nav .nav-overlay .logo-nav img {
+    width: 20%;
+  }
+  .nav-header-div nav .nav-overlay .menu-nav {
+    display: none;
+  }
+  .nav-header-div nav .nav-overlay .social-medias-nav {
+    width: 20%;
+  }
+  .nav-header-div nav .nav-overlay .burger-menu {
+    display: block;
+  }
+  .nav-header-div nav .nav-overlay .burger-menu i {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .nav-header-div nav .nav-overlay {
+    width: 95%;
+    justify-content: space-around;
+    gap: 2rem;
+  }
+  .nav-header-div nav .nav-overlay .logo-nav {
+    width: 30%;
+  }
+  .nav-header-div nav .nav-overlay .logo-nav img {
+    width: 80%;
+  }
+  .nav-header-div nav .nav-overlay .menu-nav {
+    display: none;
+  }
+  .nav-header-div nav .nav-overlay .social-medias-nav {
+    width: 30%;
+  }
+  .nav-header-div nav .nav-overlay .social-medias-nav ul a {
+    font-size: 0.9rem;
+  }
+  .nav-header-div nav .nav-overlay .burger-menu {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+  }
+  .nav-header-div nav .nav-overlay .burger-menu i {
+    font-size: 1.2rem;
+  }
+}
+.nav-header-div header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.nav-header-div header .header-overlay {
+  width: 90%;
+}
+.nav-header-div header .header-overlay .header-line {
+  border: 0.2rem solid #d2b356;
+  width: 2.5rem;
+  margin: 2rem 0;
+}
+.nav-header-div header .header-overlay .line-2 {
+  margin-bottom: 5rem;
+}
+.nav-header-div header .header-overlay h1 {
+  width: 41%;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  font-size: 4.5rem;
+  font-weight: 900;
+  line-height: 3.8rem;
+}
+.nav-header-div header .header-overlay p {
+  width: 35%;
+  margin: 2.5rem 0 1rem 0;
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #525252;
+}
+.nav-header-div header .header-overlay p::first-letter {
+  text-transform: capitalize;
+}
+.nav-header-div header .header-overlay a {
+  margin: 5rem 0;
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  font-weight: bold;
+  border: 0.2rem solid #111111;
+  padding: 1%;
+  transition: 0.3s linear;
+}
+.nav-header-div header .header-overlay a:hover {
+  border-color: #d2b356;
+  color: #d2b356;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .nav-header-div header .header-overlay {
+    padding-top: 10%;
+    width: 95%;
+  }
+  .nav-header-div header .header-overlay .header-line {
+    border: 0.15rem solid #d2b356;
+    width: 2rem;
+    margin: 1.5rem 0;
+  }
+  .nav-header-div header .header-overlay .line-2 {
+    margin-bottom: 5rem;
+  }
+  .nav-header-div header .header-overlay h1 {
+    width: 38%;
+    font-size: 3.8rem;
+    line-height: 3.4rem;
+  }
+  .nav-header-div header .header-overlay p {
+    width: 35%;
+    margin: 2.5rem 0 1rem 0;
+    color: #111111;
+    font-family: "Open Sans", sans-serif, Arial, Helvetica;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: lowercase;
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: #525252;
+  }
+  .nav-header-div header .header-overlay p::first-letter {
+    text-transform: capitalize;
+  }
+  .nav-header-div header .header-overlay a {
+    margin: 5rem 0;
+    color: #111111;
+    font-family: "Open Sans", sans-serif, Arial, Helvetica;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 400;
+    font-weight: bold;
+    border: 0.2rem solid #111111;
+    padding: 1%;
+    transition: 0.3s linear;
+    padding: 1.5%;
+  }
+  .nav-header-div header .header-overlay a:hover {
+    border-color: #d2b356;
+    color: #d2b356;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .nav-header-div header .header-overlay {
+    padding-top: 10%;
+    width: 90%;
+  }
+  .nav-header-div header .header-overlay .header-line {
+    border: 0.12rem solid #d2b356;
+    width: 1rem;
+    margin: 1.5rem 0;
+  }
+  .nav-header-div header .header-overlay h1 {
+    min-width: 70%;
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .nav-header-div header .header-overlay p {
+    width: 60%;
+    margin: 2.5rem 0 1rem 0;
+    color: #111111;
+    font-family: "Open Sans", sans-serif, Arial, Helvetica;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: lowercase;
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: #525252;
+  }
+  .nav-header-div header .header-overlay p::first-letter {
+    text-transform: capitalize;
+  }
+  .nav-header-div header .header-overlay a {
+    margin: 5rem 0;
+    color: #111111;
+    font-family: "Open Sans", sans-serif, Arial, Helvetica;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 400;
+    font-weight: bold;
+    border: 0.2rem solid #111111;
+    padding: 1%;
+    transition: 0.3s linear;
+    padding: 1.5%;
+  }
+  .nav-header-div header .header-overlay a:hover {
+    border-color: #d2b356;
+    color: #d2b356;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .nav-header-div {
+    background-size: 180%;
+    background-position: top center;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .nav-header-div {
+    padding-bottom: 10%;
+    background-size: cover;
+    background-position: top center;
+  }
+}
+
+/*** ABOUT **************************************/
+.about {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .about-overlay {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: first baseline;
+}
+.about .about-overlay .left-about {
+  width: 33%;
+}
+.about .about-overlay .left-about h3 {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #cccccc;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  margin-bottom: 1rem;
+}
+.about .about-overlay .left-about h2 {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  font-weight: 700;
+  font-size: 2.2rem;
+  text-transform: capitalize;
+  width: 90%;
+}
+.about .about-overlay .left-about .header-line {
+  border: 0.2rem solid #d2b356;
+  width: 2.5rem;
+  margin: 2rem 0;
+}
+.about .about-overlay .left-about p {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #525252;
+  font-size: 1.1rem;
+  width: 90%;
+}
+.about .about-overlay .left-about p::first-letter {
+  text-transform: capitalize;
+}
+.about .about-overlay .right-about {
+  width: 64%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.about .about-overlay .right-about .about-card {
+  margin-bottom: 2rem;
+  width: 45%;
+}
+.about .about-overlay .right-about .about-card i {
+  color: #505458;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.about .about-overlay .right-about .about-card h2 {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  font-weight: 700;
+  font-size: 2.2rem;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.about .about-overlay .right-about .about-card p {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: lowercase;
+}
+.about .about-overlay .right-about .about-card p::first-letter {
+  text-transform: capitalize;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .about {
+    min-height: 40vh;
+    margin-top: 3rem;
+  }
+  .about .about-overlay {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about .about-overlay .left-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .about .about-overlay .left-about h2 {
+    text-align: center;
+  }
+  .about .about-overlay .left-about p {
+    text-align: center;
+  }
+  .about .about-overlay .right-about {
+    margin-top: 4rem;
+    width: 100%;
+  }
+  .about .about-overlay .right-about .about-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    width: 45%;
+  }
+  .about .about-overlay .right-about .about-card p {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .about {
+    min-height: 50vh;
+    margin-top: 3rem;
+  }
+  .about .about-overlay {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about .about-overlay .left-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .about .about-overlay .left-about h2 {
+    color: #111111;
+    font-family: "Open Sans", sans-serif, Arial, Helvetica;
+    font-weight: 700;
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .about .about-overlay .left-about p {
+    text-align: center;
+  }
+  .about .about-overlay .right-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    width: 100%;
+  }
+  .about .about-overlay .right-about .about-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+  .about .about-overlay .right-about .about-card p {
+    text-align: center;
+  }
+}
+
+/*** ABOUT **************************************/
+.gallery {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery .gallery-overlay {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-wrap: wrap;
+}
+.gallery .gallery-overlay .gallery-photo {
+  width: 33.3%;
+  height: 15.2rem;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.gallery .gallery-overlay .gallery-photo:hover .gallery-photo-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+.gallery .gallery-overlay .gallery-photo .gallery-photo-overlay {
+  transition: all 0.4s ease-out;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.8156862745);
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  font-size: 2.5rem;
+  color: #d2b356;
+}
+.gallery .gallery-overlay .photo1 {
+  background-image: url("../assets/gallery/gallery-image-1.jpg");
+}
+.gallery .gallery-overlay .photo2 {
+  background-image: url("../assets/gallery/gallery-image-2.jpg");
+}
+.gallery .gallery-overlay .photo3 {
+  background-image: url("../assets/gallery/gallery-image-3.jpg");
+}
+.gallery .gallery-overlay .photo4 {
+  background-image: url("../assets/gallery/gallery-image-4.jpg");
+}
+.gallery .gallery-overlay .photo5 {
+  background-image: url("../assets/gallery/gallery-image-5.jpg");
+}
+.gallery .gallery-overlay .photo6 {
+  background-image: url("../assets/gallery/gallery-image-6.jpg");
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .gallery {
+    min-height: 40vh;
+  }
+  .gallery .gallery-overlay {
+    width: 95%;
+  }
+  .gallery .gallery-overlay .gallery-photo {
+    height: 10.5rem;
+    background-position: center;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .gallery {
+    min-height: 50vh;
+  }
+  .gallery .gallery-overlay {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .gallery .gallery-overlay .gallery-photo {
+    width: 100%;
+    height: 15.2rem;
+  }
+  .gallery .gallery-overlay .photo1 {
+    background-image: url("../assets/gallery/gallery-image-1.jpg");
+  }
+  .gallery .gallery-overlay .photo2 {
+    background-image: url("../assets/gallery/gallery-image-2.jpg");
+  }
+  .gallery .gallery-overlay .photo3 {
+    background-image: url("../assets/gallery/gallery-image-3.jpg");
+  }
+  .gallery .gallery-overlay .photo4 {
+    background-image: url("../assets/gallery/gallery-image-4.jpg");
+  }
+  .gallery .gallery-overlay .photo5 {
+    background-image: url("../assets/gallery/gallery-image-5.jpg");
+  }
+  .gallery .gallery-overlay .photo6 {
+    background-image: url("../assets/gallery/gallery-image-6.jpg");
+  }
+}
+
+/*** SERVICES **************************************/
+.services {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services .services-overlay {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.services .services-overlay .services-quote {
+  width: 28%;
+}
+.services .services-overlay .services-quote p {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #525252;
+  text-transform: none;
+  margin-bottom: 1rem;
+  text-align: end;
+  font-size: 1.5rem;
+}
+.services .services-overlay .services-quote p::first-letter {
+  text-transform: capitalize;
+}
+.services .services-overlay .services-quote h3 {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #525252;
+  text-transform: capitalize;
+  text-align: end;
+  font-weight: 500;
+}
+.services .services-overlay .services-quote h3::first-letter {
+  text-transform: capitalize;
+}
+.services .services-overlay .services-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 65%;
+}
+.services .services-overlay .services-info .info-div {
+  width: 48%;
+}
+.services .services-overlay .services-info .info-div h3 {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #cccccc;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  margin-bottom: 1rem;
+}
+.services .services-overlay .services-info .info-div h2 {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  font-weight: 700;
+  font-size: 2.2rem;
+  text-transform: capitalize;
+  width: 90%;
+}
+.services .services-overlay .services-info .info-div .line {
+  border: 0.2rem solid #d2b356;
+  width: 2.5rem;
+  margin: 2rem 0;
+}
+.services .services-overlay .services-info .info-div p {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: none;
+  margin: 2rem 0;
+}
+.services .services-overlay .services-info .info-div .lighter-text {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #525252;
+  font-size: 1.1rem;
+  width: 90%;
+  color: #cccccc;
+}
+.services .services-overlay .services-info .info-div .lighter-text::first-letter {
+  text-transform: capitalize;
+}
+.services .services-overlay .services-info .info-div .last-p {
+  margin-bottom: 3rem;
+}
+.services .services-overlay .services-info .info-div a {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  font-weight: bold;
+  border: 0.2rem solid #111111;
+  padding: 1%;
+  transition: 0.3s linear;
+}
+.services .services-overlay .services-info .info-div a:hover {
+  border-color: #d2b356;
+  color: #d2b356;
+}
+.services .services-overlay .services-info .img-div {
+  width: 50%;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .services .services-overlay {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+  .services .services-overlay .services-quote {
+    width: 100%;
+  }
+  .services .services-overlay .services-info {
+    gap: 2rem;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .services .services-overlay {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .services .services-overlay .services-quote {
+    width: 100%;
+    margin-top: 3rem;
+  }
+  .services .services-overlay .services-quote p {
+    color: #111111;
+    font-family: "Open Sans", sans-serif, Arial, Helvetica;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: lowercase;
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: #525252;
+    text-transform: none;
+    margin-bottom: 1rem;
+    text-align: end;
+    font-size: 1.2rem;
+  }
+  .services .services-overlay .services-quote p::first-letter {
+    text-transform: capitalize;
+  }
+  .services .services-overlay .services-quote h3 {
+    font-size: 1rem;
+  }
+  .services .services-overlay .services-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+  }
+  .services .services-overlay .services-info .info-div {
+    width: 100%;
+  }
+  .services .services-overlay .services-info .info-div h2 {
+    font-size: 1.8rem;
+  }
+  .services .services-overlay .services-info .info-div p {
+    font-size: 1.1rem;
+  }
+  .services .services-overlay .services-info .info-div .lighter-text {
+    font-size: 1.1rem;
+  }
+  .services .services-overlay .services-info .img-div {
+    width: 60%;
+  }
+}
+
+/*** CUSTOMERS **************************************/
+.customers {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.customers .customers-overlay {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.customers .customers-overlay .customers-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.customers .customers-overlay .customers-title h3 {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #cccccc;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+}
+.customers .customers-overlay .customers-title h2 {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  font-weight: 700;
+  font-size: 2.2rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+.customers .customers-overlay .customers-title .line-div {
+  border: 0.2rem solid #d2b356;
+  width: 2.5rem;
+  margin: 2rem 0;
+}
+.customers .customers-overlay .customers-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.customers .customers-overlay .customers-info .cutomers-card {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.customers .customers-overlay .customers-info .cutomers-card .customers-img-div {
+  width: 40%;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+.customers .customers-overlay .customers-info .cutomers-card .customers-img-div img {
+  border-radius: 50%;
+}
+.customers .customers-overlay .customers-info .cutomers-card .customers-info-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.customers .customers-overlay .customers-info .cutomers-card .customers-info-div p {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #525252;
+  text-transform: none;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.customers .customers-overlay .customers-info .cutomers-card .customers-info-div p::first-letter {
+  text-transform: capitalize;
+}
+.customers .customers-overlay .customers-info .cutomers-card .customers-info-div .line-div {
+  border: 0.2rem solid #d2b356;
+  width: 2.5rem;
+  margin: 2rem 0;
+}
+.customers .customers-overlay .customers-info .cutomers-card .customers-info-div h2 {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .customers {
+    min-height: 40vh;
+  }
+  .customers .customers-overlay {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .customers .customers-overlay .customers-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .customers .customers-overlay .customers-title h2 {
+    color: #111111;
+    font-family: "Open Sans", sans-serif, Arial, Helvetica;
+    font-weight: 700;
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    font-size: 1.8rem;
+  }
+  .customers .customers-overlay .customers-title .line-div {
+    border: 0.15rem solid #d2b356;
+    width: 2rem;
+    margin: 1.5rem 0;
+  }
+  .customers .customers-overlay .customers-info .cutomers-card {
+    margin-top: 2rem;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .customers .customers-overlay .customers-info .cutomers-card .customers-info-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .customers .customers-overlay .customers-info .cutomers-card .customers-info-div p {
+    font-size: 1rem;
+  }
+  .customers .customers-overlay .customers-info .cutomers-card .customers-info-div .line-div {
+    border: 0.15rem solid #d2b356;
+    width: 2rem;
+    margin: 1.5rem 0;
+  }
+  .customers .customers-overlay .customers-info .cutomers-card .customers-info-div h2 {
+    color: #111111;
+    font-family: "Open Sans", sans-serif, Arial, Helvetica;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: capitalize;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .customers {
+    margin: 2rem 0;
+  }
+  .customers .customers-overlay {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .customers .customers-overlay .customers-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .customers .customers-overlay .customers-title .line-div {
+    border: 0.15rem solid #d2b356;
+    width: 2rem;
+    margin: 1.5rem 0;
+  }
+  .customers .customers-overlay .customers-info {
+    flex-wrap: wrap;
+  }
+  .customers .customers-overlay .customers-info .cutomers-card {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .customers .customers-overlay .customers-info .cutomers-card .customers-info-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .customers .customers-overlay .customers-info .cutomers-card .customers-info-div p {
+    font-size: 1rem;
+  }
+  .customers .customers-overlay .customers-info .cutomers-card .customers-info-div .line-div {
+    border: 0.15rem solid #d2b356;
+    width: 2rem;
+    margin: 1.5rem 0;
+  }
+  .customers .customers-overlay .customers-info .cutomers-card .customers-info-div h2 {
+    color: #111111;
+    font-family: "Open Sans", sans-serif, Arial, Helvetica;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 1rem;
+  }
+  .customers .customers-overlay .customers-info .cutomers-card .customers-info-div .line-div {
+    border: 0.15rem solid #d2b356;
+    width: 2rem;
+    margin: 1.5rem 0;
+    margin: 1rem 0;
+  }
+  .customers .customers-overlay .customers-info .cutomers-card .customers-img-div {
+    width: 25%;
+  }
+}
+
+/*** TESTIMONIAL **************************************/
+.testimonilas {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonilas .testimonilas-overlay {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.testimonilas .testimonilas-overlay .testimonilas-info {
+  width: 32%;
+}
+.testimonilas .testimonilas-overlay .testimonilas-info h3 {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #cccccc;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  margin-bottom: 1rem;
+}
+.testimonilas .testimonilas-overlay .testimonilas-info h2 {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  font-weight: 700;
+  font-size: 2.2rem;
+  text-transform: capitalize;
+  text-transform: lowercase;
+  width: 90%;
+}
+.testimonilas .testimonilas-overlay .testimonilas-info h2::first-letter {
+  text-transform: capitalize;
+}
+.testimonilas .testimonilas-overlay .testimonilas-info .line-div {
+  border: 0.2rem solid #d2b356;
+  width: 2.5rem;
+  margin: 2rem 0;
+}
+.testimonilas .testimonilas-overlay .testimonilas-info p {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #525252;
+  font-size: 1.1rem;
+  width: 90%;
+}
+.testimonilas .testimonilas-overlay .testimonilas-info p::first-letter {
+  text-transform: capitalize;
+}
+.testimonilas .testimonilas-overlay .testimonilas-imges {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 65%;
+}
+.testimonilas .testimonilas-overlay .testimonilas-imges .testimonials-img {
+  width: 33.3%;
+  position: relative;
+}
+.testimonilas .testimonilas-overlay .testimonilas-imges .testimonials-img:hover .testimonials-img-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+.testimonilas .testimonilas-overlay .testimonilas-imges .testimonials-img .testimonials-img-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(17, 17, 17, 0.8588235294);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  transition: 0.3s ease-out;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  font-weight: 700;
+  font-size: 2.2rem;
+  text-transform: capitalize;
+  color: #ffffff;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 786px) and (max-width: 1024px) {
+  .testimonilas {
+    min-height: 40vh;
+  }
+  .testimonilas .testimonilas-overlay {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  .testimonilas .testimonilas-overlay .testimonilas-info {
+    width: 49%;
+  }
+  .testimonilas .testimonilas-overlay .testimonilas-info h3 {
+    font-size: 1rem;
+  }
+  .testimonilas .testimonilas-overlay .testimonilas-info h2 {
+    width: 100%;
+    font-size: 1.8rem;
+  }
+  .testimonilas .testimonilas-overlay .testimonilas-info .line-div {
+    border: 0.15rem solid #d2b356;
+    width: 2rem;
+    margin: 1.5rem 0;
+  }
+  .testimonilas .testimonilas-overlay .testimonilas-info p {
+    font-size: 1rem;
+    width: 100%;
+  }
+  .testimonilas .testimonilas-overlay .testimonilas-imges {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 49%;
+  }
+  .testimonilas .testimonilas-overlay .testimonilas-imges .testimonials-img {
+    width: 33.3%;
+    position: relative;
+  }
+  .testimonilas .testimonilas-overlay .testimonilas-imges .testimonials-img:hover .testimonials-img-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+  .testimonilas .testimonilas-overlay .testimonilas-imges .testimonials-img .testimonials-img-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 17, 17, 0.8588235294);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    transition: 0.3s ease-out;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #111111;
+    font-family: "Open Sans", sans-serif, Arial, Helvetica;
+    font-weight: 700;
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .testimonilas {
+    min-height: 50vh;
+  }
+  .testimonilas .testimonilas-overlay {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .testimonilas .testimonilas-overlay .testimonilas-info {
+    width: 100%;
+  }
+  .testimonilas .testimonilas-overlay .testimonilas-info h3 {
+    font-size: 1rem;
+  }
+  .testimonilas .testimonilas-overlay .testimonilas-info h2 {
+    width: 100%;
+    font-size: 1.8rem;
+  }
+  .testimonilas .testimonilas-overlay .testimonilas-info .line-div {
+    border: 0.15rem solid #d2b356;
+    width: 2rem;
+    margin: 1.5rem 0;
+  }
+  .testimonilas .testimonilas-overlay .testimonilas-info p {
+    font-size: 1.1rem;
+    width: 100%;
+  }
+  .testimonilas .testimonilas-overlay .testimonilas-imges {
+    width: 100%;
+  }
+}
+
+/*** PRICING **************************************/
+.pricing {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding-bottom: 5rem;
+}
+.pricing .pricing-overlay {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pricing .pricing-overlay .pricing-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pricing .pricing-overlay .pricing-title h3 {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #cccccc;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  margin-bottom: 1rem;
+}
+.pricing .pricing-overlay .pricing-title h2 {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  font-weight: 700;
+  font-size: 2.2rem;
+  text-transform: capitalize;
+  text-transform: lowercase;
+  width: 100%;
+}
+.pricing .pricing-overlay .pricing-title h2::first-letter {
+  text-transform: capitalize;
+}
+.pricing .pricing-overlay .pricing-title .line-div {
+  border: 0.2rem solid #d2b356;
+  width: 2.5rem;
+  margin: 2rem 0;
+}
+.pricing .pricing-overlay .pricing-title p {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #525252;
+  font-size: 1.1rem;
+  width: 90%;
+}
+.pricing .pricing-overlay .pricing-title p::first-letter {
+  text-transform: capitalize;
+}
+.pricing .pricing-overlay .pricing-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.pricing .pricing-overlay .pricing-cards .pricing-card {
+  width: 31%;
+  padding: 1rem 0;
+  background-color: #ffffff;
+  border: 0.5rem solid transparent;
+  transition: 0.1s linear;
+}
+.pricing .pricing-overlay .pricing-cards .pricing-card:hover {
+  border: 0.5rem solid #d2b356;
+  padding: 1rem 0;
+}
+.pricing .pricing-overlay .pricing-cards .pricing-card .package-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+}
+.pricing .pricing-overlay .pricing-cards .pricing-card .package-type h2 {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  font-weight: 700;
+}
+.pricing .pricing-overlay .pricing-cards .pricing-card .package-type p {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #cccccc;
+  text-transform: none;
+  font-style: italic;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.pricing .pricing-overlay .pricing-cards .pricing-card .package-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  background-color: #f5f5f5;
+}
+.pricing .pricing-overlay .pricing-cards .pricing-card .package-price h2 {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  font-weight: 700;
+  font-size: 2.2rem;
+  text-transform: capitalize;
+  font-size: 4rem;
+  position: relative;
+}
+.pricing .pricing-overlay .pricing-cards .pricing-card .package-price h2 span {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 0;
+  left: -1rem;
+}
+.pricing .pricing-overlay .pricing-cards .pricing-card .package-price p {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #525252;
+  color: #cccccc;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.pricing .pricing-overlay .pricing-cards .pricing-card .package-price p::first-letter {
+  text-transform: capitalize;
+}
+.pricing .pricing-overlay .pricing-cards .pricing-card .active-package {
+  background-color: #d2b356;
+}
+.pricing .pricing-overlay .pricing-cards .pricing-card .active-package p {
+  color: #ffffff;
+}
+.pricing .pricing-overlay .pricing-cards .pricing-card .package-info ul {
+  margin: 2rem 0;
+}
+.pricing .pricing-overlay .pricing-cards .pricing-card .package-info ul li {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #525252;
+  width: 100%;
+  padding: 0.5rem 0;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.1rem;
+  border-bottom: 1px solid #f5f5f5;
+}
+.pricing .pricing-overlay .pricing-cards .pricing-card .package-info ul li::first-letter {
+  text-transform: capitalize;
+}
+.pricing .pricing-overlay .pricing-cards .pricing-card .package-info ul li:last-child {
+  border: none;
+}
+.pricing .pricing-overlay .pricing-cards .pricing-card .buy-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+}
+.pricing .pricing-overlay .pricing-cards .pricing-card .buy-button a {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  font-weight: bold;
+  border: 0.2rem solid #111111;
+  padding: 1%;
+  transition: 0.3s linear;
+}
+.pricing .pricing-overlay .pricing-cards .pricing-card .buy-button a:hover {
+  border-color: #d2b356;
+  color: #d2b356;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .pricing {
+    min-height: 40vh;
+  }
+  .pricing .pricing-overlay {
+    margin: 3rem 0;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .pricing {
+    min-height: 50vh;
+  }
+  .pricing .pricing-overlay {
+    margin: 3rem 0;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .pricing .pricing-overlay .pricing-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .pricing .pricing-overlay .pricing-title h2 {
+    text-align: center;
+  }
+  .pricing .pricing-overlay .pricing-title .line-div {
+    border: 0.15rem solid #d2b356;
+    width: 2rem;
+    margin: 1.5rem 0;
+  }
+  .pricing .pricing-overlay .pricing-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .pricing .pricing-overlay .pricing-cards .pricing-card {
+    width: 100%;
+  }
+}
+
+/*** FOOTER **************************************/
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+footer .footer-overlay {
+  min-height: 20vh;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  align-items: baseline;
+}
+footer .footer-overlay .left-footer h2 {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #cccccc;
+  font-size: 1.2rem;
+}
+footer .footer-overlay .right-footer ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-around;
+}
+footer .footer-overlay .right-footer ul a {
+  color: #111111;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #cccccc;
+  font-size: 1.2rem;
+}
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+  footer .footer-overlay {
+    min-height: 15vh;
+    width: 90%;
+  }
+  footer .footer-overlay .left-footer h2 {
+    color: #111111;
+    font-family: "Open Sans", sans-serif, Arial, Helvetica;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #cccccc;
+    font-size: 1rem;
+  }
+  footer .footer-overlay .right-footer ul a {
+    color: #111111;
+    font-family: "Open Sans", sans-serif, Arial, Helvetica;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #cccccc;
+    font-size: 1rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
