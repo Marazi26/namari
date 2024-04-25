@@ -24,19 +24,50 @@ img {
 }
 
 body {
-    border: 1.4rem solid $body-border;
+    border:1.4rem solid $body-border;
+    border-width: 0 1.4rem 0 1.4rem;
+
+    & > :first-child {
+        width: 100%;
+        height: 1.4rem;
+        background-color: $body-border;
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 56;
+    }
+
+    .last-child {
+        width: 100%;
+        height: 1.4rem;
+        background-color: $body-border;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 56;
+    }
 
     @media screen and (min-width:320px) and (max-width:1024px) {
         border: none;
+        & > :first-child {
+            display: none;
+        }
+        .last-child{
+            display: none;
+        }
     }
+
 }
 
 /*** NAV **************************************/
 
-.nav-header-div {
+.nav-header-container {
     background-image: url("../assets/navheader/banner-image-1.jpg");
     background-size: cover;
     background-position: top center;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     padding-bottom: 3%;
     @include section-vh-sizing-desktop;
@@ -44,7 +75,7 @@ body {
     nav {
         @include flex-box-center;
         padding-top: 3%;
-
+        margin: 0 1.4rem;
         .nav-overlay {
             @include section-sizing-desktop;
             @include flex-box;
@@ -91,7 +122,7 @@ body {
         }
 
         @media screen and (min-width:768px) and (max-width:1024px) {
-
+            margin: 0;
             .nav-overlay {
                 @include section-sizing-tablet;
                 justify-content: space-around;
@@ -124,6 +155,7 @@ body {
         }
 
         @media screen and (min-width:320px) and (max-width:768px) {
+            margin: 0;
 
             .nav-overlay {
                 @include section-sizing-tablet;
@@ -201,10 +233,12 @@ body {
         }
 
         @media screen and (min-width:768px) and (max-width:1024px) {
+            align-items: flex-start;
+            @include section-vh-sizing-desktop;
             .header-overlay {
-                padding-top: 10%;
+                @include section-vh-sizing-desktop;
                 @include section-sizing-tablet;
-
+                padding-top: 10%;
                 .header-line {
                     @include line-tab;
                 }
@@ -226,7 +260,7 @@ body {
                 }
 
                 a {
-                    margin: 5rem 0;
+                    margin: 1rem 0;
                     @include long-button;
                     padding: 1.5%;
                 }
@@ -1053,13 +1087,15 @@ body {
     @include section-vh-sizing-desktop;
     @include flex-box-center;
     background-color: $pricing-section-bg;
-    padding-bottom: 5rem;
+    padding-bottom: 7rem;
     .pricing-overlay {
         @include section-sizing-desktop;
         @include flex-box-column-center;
 
         .pricing-title {
             @include flex-box-column-center;
+            padding-top: 3.5rem;
+            padding-bottom: 4rem;
 
             h3 {
                 @include norm-text;
@@ -1196,7 +1232,8 @@ body {
 
     @media screen and (min-width:768px) and (max-width:1024px) {
         @include section-vh-sizing-tablet;
-
+        padding-bottom: 3rem;
+    
         .pricing-overlay {
             margin: 3rem 0;
             @include section-sizing-tablet;
@@ -1206,9 +1243,10 @@ body {
 
     @media screen and (min-width:320px) and (max-width:768px) {
         @include section-vh-sizing-mobile;
+        padding-bottom: 3rem;
 
         .pricing-overlay {
-            margin: 3rem 0;
+            margin: 0;
             @include section-sizing-mobile;
             @include flex-box-column-center;
 
@@ -1242,8 +1280,9 @@ body {
 footer{
     @include flex-box-center;
     margin-top: 3rem;
+
     .footer-overlay{
-        min-height: 20vh;
+        min-height: 15vh;
         @include section-sizing-desktop;
         @include flex-box;
         align-items: baseline;
@@ -1251,7 +1290,8 @@ footer{
             h2{
                 @include norm-text;
                 color: $body-border;
-                font-size: 1.2rem;
+                font-size: 1rem;
+                text-transform: capitalize;
             }
         }
         .right-footer{
@@ -1270,7 +1310,7 @@ footer{
 
     @media screen and (min-width:320px) and (max-width:1024px) {
         .footer-overlay{
-            min-height: 15vh;
+            min-height: 10vh;
             @include section-sizing-mobile;
             .left-footer{
                 h2{
