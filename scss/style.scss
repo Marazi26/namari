@@ -24,10 +24,10 @@ img {
 }
 
 body {
-    border:1.4rem solid $body-border;
+    border: 1.4rem solid $body-border;
     border-width: 0 1.4rem 0 1.4rem;
 
-    & > :first-child {
+    &> :first-child {
         width: 100%;
         height: 1.4rem;
         background-color: $body-border;
@@ -51,10 +51,12 @@ body {
 
     @media screen and (min-width:320px) and (max-width:1024px) {
         border: none;
-        & > :first-child {
+
+        &> :first-child {
             display: none;
         }
-        .last-child{
+
+        .last-child {
             display: none;
         }
     }
@@ -76,6 +78,7 @@ body {
         @include flex-box-center;
         padding-top: 3%;
         margin: 0 1.4rem;
+
         .nav-overlay {
             @include section-sizing-desktop;
             @include flex-box;
@@ -98,6 +101,11 @@ body {
                     li {
                         a {
                             @include norm-text;
+                            transition: .1s linear;
+                        }
+
+                        &:hover a{
+                            color: $body-border;
                         }
                     }
                 }
@@ -113,6 +121,10 @@ body {
                     a {
                         @include norm-text;
                     }
+                    
+                    li:hover a{
+                        color: $body-border;
+                    }
                 }
             }
 
@@ -123,6 +135,7 @@ body {
 
         @media screen and (min-width:768px) and (max-width:1024px) {
             margin: 0;
+
             .nav-overlay {
                 @include section-sizing-tablet;
                 justify-content: space-around;
@@ -235,10 +248,12 @@ body {
         @media screen and (min-width:768px) and (max-width:1024px) {
             align-items: flex-start;
             @include section-vh-sizing-desktop;
+
             .header-overlay {
                 @include section-vh-sizing-desktop;
                 @include section-sizing-tablet;
                 padding-top: 10%;
+
                 .header-line {
                     @include line-tab;
                 }
@@ -661,7 +676,9 @@ body {
                 }
             }
 
+            
             .services-info {
+                margin-top: 2rem;
                 @include flex-box-column-center;
                 gap: 2rem;
                 width: 100%;
@@ -1088,6 +1105,7 @@ body {
     @include flex-box-center;
     background-color: $pricing-section-bg;
     padding-bottom: 7rem;
+
     .pricing-overlay {
         @include section-sizing-desktop;
         @include flex-box-column-center;
@@ -1129,6 +1147,7 @@ body {
 
         .pricing-cards {
             @include flex-box;
+
             .pricing-card {
                 width: 31%;
                 padding: 1rem 0;
@@ -1233,11 +1252,19 @@ body {
     @media screen and (min-width:768px) and (max-width:1024px) {
         @include section-vh-sizing-tablet;
         padding-bottom: 3rem;
-    
+
         .pricing-overlay {
             margin: 3rem 0;
             @include section-sizing-tablet;
             @include flex-box-column-center;
+
+            .pricing-cards{
+                .pricing-card{
+                    .buy-button{
+                        padding: 1rem 0;
+                    }
+                }
+            }
         }
     }
 
@@ -1277,24 +1304,26 @@ body {
 
 /*** FOOTER **************************************/
 
-footer{
+footer {
     @include flex-box-center;
     margin-top: 3rem;
 
-    .footer-overlay{
+    .footer-overlay {
         min-height: 15vh;
         @include section-sizing-desktop;
         @include flex-box;
         align-items: baseline;
-        .left-footer{
-            h2{
+
+        .left-footer {
+            h2 {
                 @include norm-text;
                 color: $body-border;
                 font-size: 1rem;
                 text-transform: capitalize;
             }
         }
-        .right-footer{
+
+        .right-footer {
             ul {
                 @include flex-box;
                 justify-content: space-around;
@@ -1309,17 +1338,20 @@ footer{
     }
 
     @media screen and (min-width:320px) and (max-width:1024px) {
-        .footer-overlay{
+        .footer-overlay {
             min-height: 10vh;
             @include section-sizing-mobile;
-            .left-footer{
-                h2{
+
+            .left-footer {
+                h2 {
                     @include norm-text;
                     color: $body-border;
                     font-size: 1rem;
+                    text-transform: capitalize;
                 }
             }
-            .right-footer{
+
+            .right-footer {
                 ul {
                     a {
                         @include norm-text;

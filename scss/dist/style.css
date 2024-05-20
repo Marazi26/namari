@@ -104,6 +104,10 @@ body .last-child {
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 400;
+  transition: 0.1s linear;
+}
+.nav-header-container nav .nav-overlay .menu-nav ul li:hover a {
+  color: #cccccc;
 }
 .nav-header-container nav .nav-overlay .social-medias-nav {
   width: 14%;
@@ -121,6 +125,9 @@ body .last-child {
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 400;
+}
+.nav-header-container nav .nav-overlay .social-medias-nav ul li:hover a {
+  color: #cccccc;
 }
 .nav-header-container nav .nav-overlay .burger-menu {
   display: none;
@@ -843,6 +850,7 @@ body .last-child {
     font-size: 1rem;
   }
   .services .services-overlay .services-info {
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1533,6 +1541,9 @@ body .last-child {
     justify-content: center;
     align-items: center;
   }
+  .pricing .pricing-overlay .pricing-cards .pricing-card .buy-button {
+    padding: 1rem 0;
+  }
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .pricing {
@@ -1628,6 +1639,7 @@ footer .footer-overlay .right-footer ul a {
     font-weight: 400;
     color: #cccccc;
     font-size: 1rem;
+    text-transform: capitalize;
   }
   footer .footer-overlay .right-footer ul a {
     color: #111111;
